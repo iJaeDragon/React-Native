@@ -2,6 +2,10 @@
 
 ## Development Environment
 
+# React-Native Study
+
+## Development Environment
+
 <table>
 	<thead>
 	<tr>
@@ -25,6 +29,14 @@
 	<tr>
 	<td>Android Studio</td>
 	<td>android-studio-2021.3.1.17-windows</td>
+	</tr>
+    <tr>
+	<td>VS Code</td>
+	<td>VSCodeUserSetup-x64-1.85.1</td>
+	</tr>
+    <tr>
+	<td>Expo CLI</td>
+	<td>expo-cli@5.5.1.</td>
 	</tr>
 	</tbody>
 </table>
