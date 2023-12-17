@@ -1,5 +1,6 @@
-# React-Native
-리액트 네이티브
+# React-Native Study
+
+## Development Environment
 
 <table>
 	<thead>
