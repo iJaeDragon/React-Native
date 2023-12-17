@@ -6,7 +6,7 @@ Expo는 완성된 프로젝트를 쉽게 배포 및 관리할 수 있도록 다�
 
 · Expo : https://expo.io
 
-![Alt text](image-2.png)
+![image-2](https://github.com/iJaeDragon/React-Native/assets/66985977/ec087a97-efe2-491d-b1f0-9e8bec6c712c)
 
 ## Expo 설치와 프로젝트 생성
 
@@ -25,7 +25,8 @@ npm install --global expo-cli@5.5.1
 ```
 expo init my-first-expo
 ```
-![Alt text](image-3.png)
+![image-3](https://github.com/iJaeDragon/React-Native/assets/66985977/aff89dc9-5bbb-4df1-9b9a-d0b5206a00b9)
+
 blank 선택
 
 ## Expo 프로젝트 실행
