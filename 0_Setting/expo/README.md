@@ -43,3 +43,8 @@ npm start
 expo start
 ```
 
+## 확인
+
+![image](https://github.com/iJaeDragon/React-Native/assets/66985977/5fb6081d-0499-4bd8-bc67-e72a1c6674d4)
+
+![image](https://github.com/iJaeDragon/React-Native/assets/66985977/f89b6032-043f-44ea-b99b-4280143e058d)
