@@ -2,10 +2,6 @@
 
 ## Development Environment
 
-# React-Native Study
-
-## Development Environment
-
 <table>
 	<thead>
 	<tr>
