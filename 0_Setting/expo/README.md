@@ -47,4 +47,10 @@ expo start
 
 ![image](https://github.com/iJaeDragon/React-Native/assets/66985977/5fb6081d-0499-4bd8-bc67-e72a1c6674d4)
 
+### web ui
 ![image](https://github.com/iJaeDragon/React-Native/assets/66985977/f89b6032-043f-44ea-b99b-4280143e058d)
+
+테스트 하려는 기기에서 구글 스토어 혹은 앱스토에서 Expo 애플리케이션을 다운받아 설치하고
+화면에서는 보이는 qr코드를 Expo 애플리케이션을 통해 스캔하여 테스트를 진행한다.
+
+![image](https://github.com/iJaeDragon/React-Native/assets/66985977/5a66944f-7816-4653-97de-be6fd5a965ae)
