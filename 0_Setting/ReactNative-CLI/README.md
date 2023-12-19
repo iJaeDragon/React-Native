@@ -6,7 +6,8 @@ Expo와 반대로 리액트 네이티브 CLI에서는 필요한 기능이 있을
 ```
 npx react-native init MyFirstCLI
 ```
-![Alt text](image-4.png)
+
+![image](https://github.com/iJaeDragon/React-Native/assets/66985977/585a4681-8e08-4269-8002-32315a92bc3c)
 
 ## 프로젝트 실행
 ```
