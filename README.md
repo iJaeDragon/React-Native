@@ -20,7 +20,7 @@
 	</tr>
 	<tr>
 	<td>Java</td>
-	<td>jdk-8u191-windows-x64</td>
+	<td>jdk-14.0.2_windows-x64_bin</td>
 	</tr>
 	<tr>
 	<td>Android Studio</td>
@@ -54,4 +54,40 @@
 <td>Android SDK Build-Tools 29.0.2</td>
 </tr>
 </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Test Device</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2">Android</th>
+            <td>
+                Hardware
+            </td>
+            <td>
+                Pixel 3
+            </td>
+        </tr>
+        <tr>
+            <td>System image</td>
+            <td>Q</td>
+        </tr>
+        <tr>
+            <th rowspan="2">iOS</th>
+            <td>
+                _
+            </td>
+            <td>
+                _
+            </td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>_</td>
+        </tr>
+    </tbody>
 </table>
