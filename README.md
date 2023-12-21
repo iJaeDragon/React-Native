@@ -47,6 +47,22 @@
 </table>
 
 <table>
+    <thead>
+        <tr>
+            <th>extension</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>React Native Tools</td>
+        </tr>
+        <tr>
+            <td>React-Native/React/Redux snippets</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
 <thead>
 <tr><th colspan="2">Android SDK</th></tr>
 </thead>
