@@ -20,11 +20,15 @@
 	</tr>
 	<tr>
 	<td>Java</td>
-	<td>jdk-14.0.2_windows-x64_bin</td>
+	<td>jdk-17.0.9_windows-x64_bin</td>
 	</tr>
 	<tr>
 	<td>Android Studio</td>
-	<td>android-studio-2021.3.1.17-windows</td>
+	<td>android-studio-2022.3.1.21-windows</td>
+	</tr>
+    <tr>
+	<td>AGP</td>
+	<td>8.1.3</td>
 	</tr>
     <tr>
 	<td>VS Code</td>
@@ -33,6 +37,11 @@
     <tr>
 	<td>Expo CLI</td>
 	<td>expo-cli@5.5.1.</td>
+    <td rowspan="2">Build </td>
+	</tr>
+    <tr>
+	<td>React Native CLI</td>
+	<td></td>
 	</tr>
 	</tbody>
 </table>
