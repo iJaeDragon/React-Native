@@ -15,3 +15,5 @@ cd MyFirstCLI
 npx react-native run-ios --terminal "cmd.exe"
 npx react-native run-android --terminal "cmd.exe"
 ```
+
+![image](https://github.com/iJaeDragon/React-Native/assets/66985977/1934612b-3aec-4237-a528-a296b2945765)
