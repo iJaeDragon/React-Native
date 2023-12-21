@@ -49,7 +49,7 @@
 <table>
     <thead>
         <tr>
-            <th>extension</th>
+            <th>VS Code Extension</th>
         </tr>
     </thead>
     <tbody>
@@ -58,6 +58,15 @@
         </tr>
         <tr>
             <td>React-Native/React/Redux snippets</td>
+        </tr>
+        <tr>
+            <td>ESLint</td>
+        </tr>
+        <tr>
+            <td>Flow Language Support</td>
+        </tr>
+        <tr>
+            <td>Prettier - Code formatter</td>
         </tr>
     </tbody>
 </table>
