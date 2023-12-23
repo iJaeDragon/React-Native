@@ -47,31 +47,6 @@
 </table>
 
 <table>
-    <thead>
-        <tr>
-            <th>VS Code Extension</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>React Native Tools</td>
-        </tr>
-        <tr>
-            <td>React-Native/React/Redux snippets</td>
-        </tr>
-        <tr>
-            <td>ESLint</td>
-        </tr>
-        <tr>
-            <td>Flow Language Support</td>
-        </tr>
-        <tr>
-            <td>Prettier - Code formatter</td>
-        </tr>
-    </tbody>
-</table>
-
-<table>
 <thead>
 <tr><th colspan="2">Android SDK</th></tr>
 </thead>
