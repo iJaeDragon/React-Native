@@ -5,13 +5,21 @@
 
 ## 목차
 
-### 1. 내장 컴포넌트
+### [1. 내장 컴포넌트](#1-내장-컴포넌트)
+
+### [2. 커스텀 컴포넌트](#2-커스텀-컴포넌트)
+
+### [3. props와 state](#3-props와-state)
+
+
+
+## 1. 내장 컴포넌트
 
 리액트 네이티브에서는 다양한 내장 컴포넌트(Core Components)들이 제공된다.
- · 리액트 네이티브 컴포넌트 문서 : https://reactnative.dev/docs/components-and-apis
+* 리액트 네이티브 컴포넌트 문서 : https://reactnative.dev/docs/components-and-apis
  
  ### Button 컴포넌트를 사용한 예제
- · 버튼 컴포넌트 문서 : https://reactnative.dev/docs/button
+* 버튼 컴포넌트 문서 : https://reactnative.dev/docs/button
 
  `Button` 컴포넌트의 문서를 확인해보면 설명과 사용 예제가 있다. 그리고 설정할 수 있는 속성들의 목록과 각 속성들의 설명을 볼 수 있다. 다른 컴포넌트들에도 이와 같이 자세한 예제와 설정 가능한 속성에 대한 성명이 있으므로 컴포넌트 사용 시 참고하면 많은 도움이 될 것이다.
 
@@ -70,12 +78,12 @@ export default App;
 
 따라서 한 플랫폼만 테스트하는 것이 아니라 iOS와 안드로이드 모두 확인하면서 개발하는 습관을 들이는 것이 중요하다.
 
-### 2. 커스텀 컴포넌트
+## 2. 커스텀 컴포넌트
 
 앞에서 사용한 `Button` 컴포넌트는 iOS와 안드로이드에서 다른 모습으로 렌더링된다는 단점이 있었다. 
 그 단점을 보완하기 위해 `TouchableOpacity` 컴포넌트와 `Text` 컴포넌트를 이용해서 `Button` 컴포넌트를 대체할 `MyButton` 컴포넌트 구현
 
-#### MyButton.js
+### MyButton.js
 ```
 // 리액트를 불러와서 사용할 수 있게 해준다. 
 // JSX는 React.createElement를 호출하는 코드로 컴파일되므로 컴포넌트를 작성할 때 반드시 작성해야 하는 코드다.
@@ -119,7 +127,7 @@ const MyButton = function() {
 export default MyButton;
 ```
 
-#### app.js
+### app.js
 ```
 import React from 'react';
 import {View, Text} from 'react-native';
@@ -155,11 +163,11 @@ const App = function() {
 export default App;
 ```
 
-#### Result
+### Result
 
 ![image](https://github.com/iJaeDragon/React-Native/assets/66985977/88a85da5-6ce4-4187-8dd3-63e6075579ea)
 
-### 3. props와 state
+## 3. props와 state
 
 `props`와 `state`는 컴포넌트가 UI뿐만 아니라 당야한 기능을 담당할 수 있도록 하여 더욱 다양한 역할을 수행할 수 있도록 해준다.
 
@@ -167,9 +175,9 @@ export default App;
 
 `props`의 변경이 필요할 경우 `props`를 설정 및 전달한 부모컴포넌트에서 변경해야 한다.
 
-#### props 전달하고 사용하기
+### 3.1 props 전달하고 사용하기
 
-##### 전달
+#### 전달
 ```
 ···
 <MyButton title="test" />
@@ -177,7 +185,7 @@ export default App;
 ```
 
 
-##### 확인
+#### 확인
 
 ```
 ···
@@ -189,14 +197,14 @@ const MyButton = function(props) {
 ```
 
 
-##### 결과
+#### 결과
 
 ```
 {"title": "test"}
 ```
 
 
-##### 방법1. 전달받은 props를 활용하여 버튼 텍스트 설정
+#### 방법1. 전달받은 props를 활용하여 버튼 텍스트 설정
 ```
 ···
 const MyButton = function(props) {
@@ -221,7 +229,7 @@ const MyButton = function(props) {
 ```
 
 
-##### 방법2. children을 이용하여 태그 사이에 있는 값으로 버튼 텍스트 설정
+#### 방법2. children을 이용하여 태그 사이에 있는 값으로 버튼 텍스트 설정
 
 ```
 <MyButton title="title Text">Child Text</MyButton>
@@ -253,7 +261,7 @@ const MyButton = function(props) {
 `props`에 `children`이 있다면 `title`보다 우선시 되도록 작성됐다.
 
 
-#### defaultProps
+### defaultProps
 
 여러 사람과 함께 개발하다 보면 내가 만든 컴포넌트를 다른 사람이 사용하는 경우가 많다. 이런 상황에서 컴포넌트를 잘못 파악해 반드시 전달되어야 하는 중요한 값이 전달되지 않았을 때 사용할 기본값을 `defaultProps`로 지정하면 만약의 사태에 빈 값이 나타나는 상황을 방지할 수 있다.
 
@@ -279,7 +287,7 @@ MyButton.defaultProps = {
 `title` 속성을 지정하지 않았을때 기본적으로 'Button'으로 지정되도록 설정하였다.
 
 
-#### propTypes
+### propTypes
 프로젝트의 크기가 커지면서 컴포넌트에 `props`를 전달할 때 잘못된 타입을 전달하거나, 필수로 전달해야 하는 값을 전달하지 않아서 문제가 생길 수 있다. 이런 상황에서 잘못된 `props`가 전달되었다는 것을 경고 메시지를 통해 알리는 방법으로 `PropTypes`를 사용하는 방법이 있다.
 
 `PropTypes`를 사용하려면 `prop-type` 라이브러리를 추가로 설치해야 한다.
@@ -341,7 +349,7 @@ Warning: Failed prop type: The prop `title` is marked as required in `MyButton`,
 
 `PropTypes`에는 문자열이나 숫자 외에도 함수(func), 객체(object), 배열(array) 등의 다양한 타입을 지정할 수 있다.
 
-##### 함수 전달
+### 함수 전달
 
 ```
 ···
@@ -385,6 +393,87 @@ const MyButton = function(props) {
                 {props.title}
             </Text>
         </TouchableOpacity>
+    );
+};
+···
+```
+
+
+### 3.2 state
+
+`props`는 부모 컴포넌트에서 받은 값으로 변경할 수 없는 반면, `state`는 컴포넌트 내부에서 생성되고 값을 변경할 수 있으며 이를 이용해 컴포넌트 상태를 관리한다. `상태(statc)`란 컴포넌트에서 변화할 수 있는 값을 나타내며, 상태가 변하는 컴포넌트는 `리렌더링(re-redering)` 된다.
+
+과거 리액트 네이티브의 경우 `함수형 컴포넌트(function components)`에서 상태를 관리할 수 없었기 때문에, 상태를 관리해야 하는 컴포넌트는 반드시 `클래스형 컴포넌트(class components)`를 사용해야 했다. 하지만 리액트 16.8버전 이후 버전을 사용하는 리액트 네이티브 0.59버전부터는 `Hooks`라는 것을 사용해 `함수형 컴포넌트`에서도 상태를 관리할 수 있게 되었다.
+
+리액트 개발 팀은 `클래스형 컴포넌트`를 삭제할 계획이 없다고 했지만, 장기적으로 `함수형 컴포넌트`를 이용하여 `Hooks`를 사용하는 것이 주된 개발 방법으로 활용될 것이라고 했기 때문에 `함수형 컴포넌트` 사용을 지향하겠다.
+
+#### Counter.js
+```
+import React, {useState} from 'react';
+import {View, Text} from 'react-native';
+import MyButton from './MyButton';
+
+const Counter = function() {
+    // React 함수형 컴포넌트에서 상태를 다루기 위해 사용되는 코드
+    // 배열 구조분해를 사용하여 반환된 값 'count'와 'setCount'로 분리 할당한다.
+    // 'count'는 현재의 상태 값을 나타내는 변수이며, 
+    // 'setCount'는 해당 상태 값을 갱싱할 때 사용되는 함수이다.
+    const [count, setCount] = useState(0); 
+
+    return (
+        <View 
+            style={
+                {
+                    alignItems: 'center'
+                }
+            }
+        >
+            <Text
+                style={
+                    {
+                        fontSize: 30, 
+                        margin: 10
+                    }
+                }
+            >
+                {count}
+            </Text>
+            <MyButton 
+                title="+1"
+                onPress={
+                    function() {
+                        setCount(count + 1)
+                    }
+                }
+            />
+            <MyButton 
+                title="-1"
+                onPress={
+                    function() {
+                        setCount(count - 1)
+                    }
+                }
+            />
+        </View>
+    )
+}
+
+export default Counter;
+```
+
+#### App.js
+
+```
+···
+import Counter from './src/components/Counter';
+
+const App = function() {
+    return (
+        <View
+            ···
+        >
+            <Counter />
+        </View>
     );
 };
 ···
